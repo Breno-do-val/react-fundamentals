@@ -4,6 +4,7 @@ import React from 'react';
 
 import Card from './layout/Card';
 import WithParameters from './components/basic/WithParameters';
+import Family from './components/basic/Family';
 import First from './components/basic/First';
 import Fragment from './components/basic/Fragment';
 import Random from './components/basic/Random';
@@ -13,11 +14,16 @@ export default () => (
         <h1>React fundamentals</h1>
 
         <div className="Cards">
-            <Card title="#04 - Random number">
+
+            <Card title="#05 - Components with children" color="#CBB">
+                <Family surname="Ferreira"/>
+            </Card>
+
+            <Card title="#04 - Random number" color="#080">
                 <Random min={1} max={200}/>
             </Card>
 
-            <Card title="#03 - Fragment">
+            <Card title="#03 - Fragment" color="#F2B200">
                 <Fragment />
             </Card>
 
@@ -27,7 +33,7 @@ export default () => (
                     grade={ 9.4 }/>
             </Card>
 
-            <Card title="#01 - First Component">
+            <Card title="#01 - First Component" color="#A1A2A0">
                 <First />
             </Card>
         </div>
