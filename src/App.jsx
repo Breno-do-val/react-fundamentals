@@ -5,6 +5,7 @@ import React from 'react';
 import Card from './layout/Card';
 import WithParameters from './components/basic/WithParameters';
 import Family from './components/basic/Family';
+import FamilyMember from './components/basic/FamilyMember';
 import First from './components/basic/First';
 import Fragment from './components/basic/Fragment';
 import Random from './components/basic/Random';
@@ -16,7 +17,11 @@ export default () => (
         <div className="Cards">
 
             <Card title="#05 - Components with children" color="#CBB">
-                <Family surname="Ferreira"/>
+                <Family surname="Silva">
+                    <FamilyMember name="Peter" />
+                    <FamilyMember name="Ann" />
+                    <FamilyMember name="Gustavo" />
+                </Family>
             </Card>
 
             <Card title="#04 - Random number" color="#080">
