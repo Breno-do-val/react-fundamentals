@@ -1,5 +1,5 @@
 import * as React from 'react';
-import students from './../../data/students';
+import students from '../../data/students';
 
 export default props => {
 
