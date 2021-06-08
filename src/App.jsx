@@ -8,13 +8,29 @@ import Family from './components/basic/Family';
 import FamilyMember from './components/basic/FamilyMember';
 import First from './components/basic/First';
 import Fragment from './components/basic/Fragment';
+import ListStudents from './components/repetition/ListStudents';
 import Random from './components/basic/Random';
+import ListProducts from './components/repetition/ListProducts';
+import EvenOrOdd from './components/conditional/EvenOrOdd';
 
 export default () => (
     <div id="app" className="App">
         <h1>React fundamentals</h1>
 
         <div className="Cards">
+
+            <Card title="#08 - Conditional Rendering" color="#A3C2D4">
+                <EvenOrOdd number={20}/>
+                <EvenOrOdd number={17}/>
+            </Card>
+
+            <Card title="#07 - 2° Repetition" color="#F3C2D4">
+                <ListProducts />
+            </Card>
+
+            <Card title="#06 - Repetition" color="#FF4C65">
+                <ListStudents />
+            </Card>
 
             <Card title="#05 - Components with children" color="#CBB">
                 <Family surname="Silva">

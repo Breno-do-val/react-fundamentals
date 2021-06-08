@@ -1,0 +1,11 @@
+.ProductList table {
+    width: 100%;
+}
+
+.ProductList th {
+    background-color: #008b8b;
+}
+
+.ProductList .Even{
+    background-color: #ddd;
+}
