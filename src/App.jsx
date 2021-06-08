@@ -8,6 +8,7 @@ import Family from './components/basic/Family';
 import FamilyMember from './components/basic/FamilyMember';
 import First from './components/basic/First';
 import Fragment from './components/basic/Fragment';
+import ListStudents from './components/repetition/listStudents';
 import Random from './components/basic/Random';
 
 export default () => (
@@ -15,7 +16,9 @@ export default () => (
         <h1>React fundamentals</h1>
 
         <div className="Cards">
-
+            <Card title="#06 - Repetition" color="#FF4C65">
+                <ListStudents />
+            </Card>
             <Card title="#05 - Components with children" color="#CBB">
                 <Family surname="Silva">
                     <FamilyMember name="Peter" />
