@@ -14,12 +14,17 @@ import ListProducts from './components/repetition/ListProducts';
 import EvenOrOdd from './components/conditional/EvenOrOdd';
 import UserInfo from './components/conditional/UserInfo';
 import DirectFather from './components/communication/DirectFather';
+import IndirectFather from './components/communication/IndirectFather';
 
 export default () => (
     <div id="app" className="App">
         <h1>React fundamentals</h1>
 
         <div className="Cards">
+
+            <Card title="#10 - Indirect Communication" color="#8BAD39">
+                <IndirectFather />
+            </Card>
 
             <Card title="#09 - DIrect Communication" color="#B3A2D4">
                 <DirectFather />
