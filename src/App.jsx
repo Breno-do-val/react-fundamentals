@@ -12,6 +12,7 @@ import ListStudents from './components/repetition/ListStudents';
 import Random from './components/basic/Random';
 import ListProducts from './components/repetition/ListProducts';
 import EvenOrOdd from './components/conditional/EvenOrOdd';
+import UserInfo from './components/conditional/UserInfo';
 
 export default () => (
     <div id="app" className="App">
@@ -22,6 +23,7 @@ export default () => (
             <Card title="#08 - Conditional Rendering" color="#A3C2D4">
                 <EvenOrOdd number={20}/>
                 <EvenOrOdd number={17}/>
+                <UserInfo user={{ name: 'Breno' }}/>
             </Card>
 
             <Card title="#07 - 2° Repetition" color="#F3C2D4">
