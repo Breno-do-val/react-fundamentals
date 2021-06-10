@@ -24,6 +24,7 @@ export default () => (
                 <EvenOrOdd number={20}/>
                 <EvenOrOdd number={17}/>
                 <UserInfo user={{ name: 'Breno' }}/>
+                <UserInfo />
             </Card>
 
             <Card title="#07 - 2° Repetition" color="#F3C2D4">
