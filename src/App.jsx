@@ -13,12 +13,17 @@ import Random from './components/basic/Random';
 import ListProducts from './components/repetition/ListProducts';
 import EvenOrOdd from './components/conditional/EvenOrOdd';
 import UserInfo from './components/conditional/UserInfo';
+import DirectFather from './components/communication/DirectFather';
 
 export default () => (
     <div id="app" className="App">
         <h1>React fundamentals</h1>
 
         <div className="Cards">
+
+            <Card title="#09 - DIrect Communication" color="#B3A2D4">
+                <DirectFather />
+            </Card>
 
             <Card title="#08 - Conditional Rendering" color="#A3C2D4">
                 <EvenOrOdd number={20}/>
