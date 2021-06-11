@@ -12,6 +12,9 @@ import ListStudents from './components/repetition/ListStudents';
 import Random from './components/basic/Random';
 import ListProducts from './components/repetition/ListProducts';
 import EvenOrOdd from './components/conditional/EvenOrOdd';
+import UserInfo from './components/conditional/UserInfo';
+import DirectFather from './components/communication/DirectFather';
+import IndirectFather from './components/communication/IndirectFather';
 
 export default () => (
     <div id="app" className="App">
@@ -19,9 +22,19 @@ export default () => (
 
         <div className="Cards">
 
+            <Card title="#10 - Indirect Communication" color="#8BAD39">
+                <IndirectFather />
+            </Card>
+
+            <Card title="#09 - DIrect Communication" color="#B3A2D4">
+                <DirectFather />
+            </Card>
+
             <Card title="#08 - Conditional Rendering" color="#A3C2D4">
                 <EvenOrOdd number={20}/>
                 <EvenOrOdd number={17}/>
+                <UserInfo user={{ name: 'Breno' }}/>
+                <UserInfo />
             </Card>
 
             <Card title="#07 - 2° Repetition" color="#F3C2D4">
