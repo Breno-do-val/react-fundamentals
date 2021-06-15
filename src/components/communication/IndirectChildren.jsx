@@ -1,12 +1,13 @@
 import React from 'react';
 
-export default props => {
+export default ({ handleClick }) => {
+    const generateAge = () => parseInt(Math.random() * 20 + 50);
     return (
         <div>
             <div>
                 Child
             </div>
-            <button onClick={e => props.handleClick('Breno', 34, true)}>Supply Info</button>
+            <button onClick={_ => handleClick('Breno', generateAge(), true)}>Supply Info</button>
         </div>
     )
 }
